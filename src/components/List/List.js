@@ -4,7 +4,7 @@ import Column from '../Column/Column.js';
 import Creator from '../Creator/Creator.js';
 import styles from './List.scss';
 import PropTypes from 'prop-types';
-import {settings} from '../../data/dataStore.js';
+import {settings,} from '../../data/dataStore.js';
 
 class List extends React.Component {
     state = {
