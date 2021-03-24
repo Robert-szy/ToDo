@@ -7,13 +7,11 @@ import {pageContents, listData, settings} from '../../data/dataStore.js';
 
 class App extends React.Component {
     
-  addList(title){
-    this.setState(state => (
-      {
-    listData: title
-      }
-    ));   
-  }
+  //addList(title){
+  //  this.setState({
+  //listData.title = title,
+  //  });   
+  //}
 
   render() {
     return (
@@ -28,7 +26,7 @@ class App extends React.Component {
           <Creator text={settings.listCreatorText} action={title => this.addList(title)}/>
         </div>
       </main>
-    )
+    );
   }
 }
 
