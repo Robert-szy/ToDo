@@ -1,15 +1,10 @@
 import React from 'react';
 import styles from './Card.scss';
 import PropTypes from 'prop-types';
-//import {listData} from '../../data/dataStore.js';
 
 class Card extends React.Component {
-    //state = {
-    //    cards: this.props.columns.cards || [],
-    //  }
     static propTypes = {
       title: PropTypes.node,
-    //    cards: PropTypes.array,
     }
     
     render() {

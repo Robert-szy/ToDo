@@ -7,12 +7,6 @@ import {pageContents, listData, settings} from '../../data/dataStore.js';
 
 class App extends React.Component {
     
-  //addList(title){
-  //  this.setState({
-  //listData.title = title,
-  //  });   
-  //}
-
   render() {
     return (
       <main className={styles.component}>
