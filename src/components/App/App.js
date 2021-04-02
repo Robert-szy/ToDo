@@ -4,19 +4,22 @@ import styles from './App.scss';
 import List from '../List/ListContainer.js';
 import Search from '../Search/SearchContainer.js';
 
-//import Creator from '../Creator/Creator.js';
-//import {listData} from '../../data/dataStore.js';
+import Creator from '../Creator/Creator.js';
+import {settings} from '../../data/dataStore.js';
 
 
 class App extends React.Component {
   static propTypes = {
     title: PropTypes.node,
     subtitle: PropTypes.node, 
+    //apps: PropTypes.array,
     lists: PropTypes.array,
+    addList: PropTypes.func,
+    //appId: PropTypes.node,
   }
     
   render() {
-    const {title, subtitle, lists} = this.props;
+    const {title, subtitle, lists, addList} = this.props;
     return (
       <main className={styles.component}>
         <h1 className={styles.title}>{title}</h1>
@@ -28,11 +31,11 @@ class App extends React.Component {
           <List key={listData.id} {...listData} />
         ))}
       
-        {/*
+        
         <div className={styles.creator}>
-          <Creator text={settings.listCreatorText} action={title => this.addList(title)}/>
+          <Creator text={settings.listCreatorText} action={addList}/>
         </div>
-        */}
+        
       </main>
     );
   }

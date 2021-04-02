@@ -1,6 +1,7 @@
 export const settings = {
   columnCreatorText: 'Add new column',
   cardCreatorText: 'Add new card',
+  listCreatorText: 'Add new list',
   creator: {
     buttonOK: 'OK',
     buttonCancel: 'Cancel',
@@ -71,10 +72,16 @@ export const listData = {
     },
   ],
 };
+const apps = [
+  {
+    id: 'app-1',
+  },
+];
 
 const lists = [
   {
     id: 'list-1',
+    appId: 'app-1',
     title: 'Things to do <sup>soon!</sup>',
     description: 'Interesting things I want to check out!',
     image: 'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png',
@@ -143,6 +150,7 @@ const cards = [
 
 const initialStoreData = {
   app: {...pageContents},
+  apps: [...apps],
   lists: [...lists],
   columns: [...columns],
   cards: [...cards],

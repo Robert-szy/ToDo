@@ -29,13 +29,6 @@ class Column extends React.Component {
           <Card key={cardData.id} {...cardData} />
         ))}
 
-        
-        {/*
-        {this.state.cards.map(({key, ...cardProps}) => (
-          <Card key={key} {...cardProps} />
-        ))}
-        */}
-
         <div className={styles.creator}>
           <Creator text={settings.cardCreatorText} action={addCard}/>
         </div>
