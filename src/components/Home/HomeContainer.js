@@ -1,5 +1,5 @@
 import {connect} from 'react-redux';
-import App from './App.js';
+import Home from './Home.js';
 import {getListsForApp, createActionAddList} from '../../redux/listsRedux.js';
 
 const mapStateToProps = (state, props) => ({
@@ -20,7 +20,7 @@ const mapDispatchToProps = (dispatch) => ({
 });
 
 //export const getColumnsForList = ({columns}, listId) => columns.filter(column => column.listId == listId);
-export default connect(mapStateToProps, mapDispatchToProps)(App);
+export default connect(mapStateToProps, mapDispatchToProps)(Home);
 
 
 
