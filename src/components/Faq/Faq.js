@@ -3,7 +3,7 @@ import Container from '../Container/Container';
 import Hero from '../Hero/Hero.js';
 import styles from './Faq.scss';
 import PropTypes from 'prop-types';
-import {listData} from '../../data/dataStore.js';
+import {settings} from '../../data/dataStore.js';
 
 
 class Faq extends React.Component {
@@ -17,9 +17,9 @@ class Faq extends React.Component {
     return (
       <section className={styles.component}>
         <Container>
-          <Hero titleText = {listData.title} image={listData.image} />
+          <Hero titleText = {settings.faq.title} image={settings.faq.image} />
           <div className={styles.description}>
-            {listData.description}
+            {settings.faq.description}
           </div>
 
           <h2>FAQ</h2>
