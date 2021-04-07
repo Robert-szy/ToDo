@@ -2,6 +2,8 @@
 
 .component {
   padding: 0 0 $base-size 0;
+  position: relative;
+  top: 60px;
 }
 
 .description:not(:empty) {

@@ -1,8 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styles from './Home.scss';
-import List from '../List/ListContainer.js';
-import Search from '../Search/SearchContainer.js';
+//import List from '../List/ListContainer.js';
+import ListLink from '../ListLink/ListLink.js';
+//import Search from '../Search/SearchContainer.js';
 import Hero from '../Hero/Hero.js';
 import Container from '../Container/Container.js';
 
@@ -31,10 +32,10 @@ class Home extends React.Component {
           {listData.description}
         </div>
 
-        <Search />
+        {/*<Search />*/}
 
         {lists.map(listData => (
-          <List key={listData.id} {...listData} />
+          <ListLink key={listData.id} {...listData} />
         ))}
       
         

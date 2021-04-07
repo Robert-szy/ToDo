@@ -15,13 +15,13 @@ export const settings = {
     icon: 'cat',
   },
   info: {
-    title: 'Things to do <sup>soon!</sup>',
-    description: 'Interesting things I want to check out!',
+    title: 'Things to do',
+    description: '',
     image: 'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png',
   },
   faq: {
-    title: 'Things to do <sup>soon!</sup>',
-    description: 'Interesting things I want to check out!',
+    title: 'Things to do',
+    description: '',
     image: 'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png',
   },
   defaultListDescription: '<p>I can do all the things!!!</p>',
@@ -34,8 +34,8 @@ export const pageContents = {
 };
 
 export const listData = {
-  title: 'Things to do <sup>soon!</sup>',
-  description: 'Interesting things I want to check out!',
+  title: 'Things to do',
+  description: '',
   image: 'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png',
   columns: [
     {
@@ -97,6 +97,20 @@ const lists = [
     appId: 'app-1',
     title: 'Things to do <sup>soon!</sup>',
     description: 'Interesting things I want to check out!',
+    image: 'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png',
+  },
+  {
+    id: 'list-2',
+    appId: 'app-1',
+    title: 'Things to do <sup>tomorrow!</sup>',
+    description: 'Interesting things I should do!',
+    image: 'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png',
+  },
+  {
+    id: 'list-3',
+    appId: 'app-1',
+    title: 'Things to do <sup>later!</sup>',
+    description: 'Interesting things worth attention!',
     image: 'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png',
   },
 ];
